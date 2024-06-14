@@ -5,7 +5,7 @@ function login() {
     const mensagem = document.getElementById('mensagem');
 
     if (hex_sha256(senhaDigitada) === senhaHash) {
-        mensagem.innerHTML = '<h3 style="color: green">Senha Correta! Redirecionando...</h3>';
+        mensagem.innerHTML = '<h3 class="sucesso">Senha Correta! Redirecionando...</h3>';
         localStorage.setItem('logado', '1');
 
         setTimeout(() => {
@@ -14,7 +14,7 @@ function login() {
         }, 2000);
 
     } else {
-        mensagem.innerHTML = '<h3 style="color: red">Senha incorreta</h1>';
+        mensagem.innerHTML = '<h3 class="fracasso">Senha incorreta</h1>';
     }
 }
 

@@ -1,27 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
     padding: 100px 0;
     margin: 0;
-    background: url('../imagens/background-botafogo.png') no-repeat center center fixed;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url('../imagens/background-botafogo.png') no-repeat center center fixed;
     background-size: cover;
+    background-position: center;
+    /* background: url('../imagens/background-botafogo.png') no-repeat center center fixed; */
+    /* background-size: cover; */
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
 }
 
-body::before {
+/* body::before {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(255, 255, 255, 0.9); /* Esmaecer a imagem de fundo */
-    z-index: -1; /* Manter a camada de esmaecimento atrás de todo o conteúdo */
-}
+    background: rgba(255, 255, 255, 0.9);
+    z-index: -1;
+} */
 
 span {
     font-weight: bold;

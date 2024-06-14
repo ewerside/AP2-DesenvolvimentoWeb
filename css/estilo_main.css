@@ -4,23 +4,26 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background: url('../imagens/background-botafogo.png') no-repeat center center fixed;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url('../imagens/background-botafogo.png') no-repeat center center fixed;
     background-size: cover;
+    background-position: center;
+    /* background: url('../imagens/background-botafogo.png') no-repeat center center fixed;
+    background-size: cover; */
     display: flex;
     flex-direction: column;
     position: relative;
 }
 
-body::before {
+/* body::before {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(255, 255, 255, 0.9); /* Esmaecer a imagem de fundo */
-    z-index: -1; /* Manter a camada de esmaecimento atrás de todo o conteúdo */
-}
+    background: rgba(255, 255, 255, 0.9); 
+    z-index: -1; 
+} */
 
 .header-main {
     display: flex;
@@ -115,7 +118,6 @@ body::before {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
     width: 300px;
 }
 

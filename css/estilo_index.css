@@ -94,8 +94,15 @@ button:hover {
 
 #mensagem {
     margin-top: 20px;
-    color: red;
     font-weight: 500;
+}
+
+.sucesso {
+    color: green;
+}
+
+.fracasso {
+    color: red;
 }
 
 /* Responsividade para telas menores */
