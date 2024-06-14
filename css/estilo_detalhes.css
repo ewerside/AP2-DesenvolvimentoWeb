@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    padding: 100px 0;
+    margin: 0;
+    background: url('../imagens/background-botafogo.png') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.9); /* Esmaecer a imagem de fundo */
+    z-index: -1; /* Manter a camada de esmaecimento atrás de todo o conteúdo */
+}
+
+span {
+    font-weight: bold;
+}
+
+#corpo-detalhes {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 600px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+    /* margin-bottom: 20px; */
+}
+
+.card .imagem {
+    flex: 0 0 40%; 
+}
+
+.card .container {
+    flex: 1;
+    padding: 20px;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.card h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 10px; 
+}
+
+.card p {
+    margin: 5px 0;
+    margin-bottom: 10px; 
+}
+
+.card button {
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px; 
+}
+
+.card button:hover {
+    background-color: #e6e6e6;
+    color: black;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 50px 20px;
+    }
+    .card {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .card .imagem {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+
+    .card .container {
+        padding: 10px;
+    }
+
+    .card h2 {
+        font-size: 18px;
+    }
+
+    .card p {
+        margin: 5px 0;
+        margin-bottom: 8px;
+    }
+
+    .card button {
+        padding: 8px 16px;
+        margin-top: 8px;
+    }
+}
